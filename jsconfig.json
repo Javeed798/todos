@@ -1,0 +1,57 @@
+{
+  "compilerOptions": {
+    "checkJs": true,
+    "allowJs": true,
+    "jsx": "react",
+    "baseUrl": ".",
+    "paths": {
+      "/*": [
+        "./*"
+      ],
+      "meteor/mongo": [
+        "/home/javeedsharif/.meteor/packages/mongo/1.7.0/web.browser/local_collection_driver.js",
+        "/home/javeedsharif/.meteor/packages/mongo/1.7.0/web.browser/collection.js",
+        "/home/javeedsharif/.meteor/packages/mongo/1.7.0/web.browser/connection_options.js",
+        "/home/javeedsharif/.meteor/packages/mongo/1.7.0/web.browser/doc_fetcher.js",
+        "/home/javeedsharif/.meteor/packages/mongo/1.7.0/web.browser/mongo_driver.js",
+        "/home/javeedsharif/.meteor/packages/mongo/1.7.0/web.browser/observe_multiplex.js",
+        "/home/javeedsharif/.meteor/packages/mongo/1.7.0/web.browser/oplog_observe_driver.js",
+        "/home/javeedsharif/.meteor/packages/mongo/1.7.0/web.browser/oplog_tailing.js",
+        "/home/javeedsharif/.meteor/packages/mongo/1.7.0/web.browser/polling_observe_driver.js",
+        "/home/javeedsharif/.meteor/packages/mongo/1.7.0/web.browser/remote_collection_driver.js"
+      ],
+      "meteor/jquery": [
+        "/home/javeedsharif/.meteor/packages/jquery/3.0.0/web.browser/main.js"
+      ],
+      "meteor/reactive-var": [
+        "/home/javeedsharif/.meteor/packages/reactive-var/1.0.11/web.browser/reactive-var.js"
+      ],
+      "meteor/tracker": [
+        "/home/javeedsharif/.meteor/packages/tracker/1.2.0/web.browser/tracker.js"
+      ],
+      "meteor/es5-shim": [
+        "/home/javeedsharif/.meteor/packages/es5-shim/4.8.0/web.browser/client.js",
+        "/home/javeedsharif/.meteor/packages/es5-shim/4.8.0/web.browser/console.js",
+        "/home/javeedsharif/.meteor/packages/es5-shim/4.8.0/web.browser/cordova.js",
+        "/home/javeedsharif/.meteor/packages/es5-shim/4.8.0/web.browser/export_globals.js",
+        "/home/javeedsharif/.meteor/packages/es5-shim/4.8.0/web.browser/import_globals.js"
+      ],
+      "meteor/ecmascript": [
+        "/home/javeedsharif/.meteor/packages/ecmascript/0.13.2/web.browser/ecmascript.js"
+      ],
+      "meteor/shell-server": [
+        "/home/javeedsharif/.meteor/packages/shell-server/0.4.0/web.browser/main.js",
+        "/home/javeedsharif/.meteor/packages/shell-server/0.4.0/web.browser/shell-server.js"
+      ]
+    }
+  },
+  "typeAcquisition": {
+    "include": [
+      "meteor"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    ".meteor"
+  ]
+}

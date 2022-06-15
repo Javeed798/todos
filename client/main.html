@@ -1,0 +1,57 @@
+<head>
+  <title>todos</title>
+</head>
+
+<body>
+  <h1>myTodos</h1>
+
+  {{> main}}
+
+</body>
+
+
+
+<template name="main" class="temp">
+<!-- when user is logged in then only dislplay the form to enter the todos as follows -->
+<!-- in here its not working cause my meteor is old version soo I commented {{#if}} same as
+             check box in down below-->
+
+<form class="new-todo">
+
+    <div class="form-group">
+    <input type="text" name = "text" class = "form-control"  placeholder="Type a TOdo">
+</div>
+  </form>
+  
+
+<ul>
+
+  <!-- Looping through each and every data Base -->
+  {{#each todos}}
+
+    <li class="{{#if checked}}checked{{/if}}">
+     
+     <!-- {{> #if currentUser}} -->
+      <button class="delete-todo"> 
+        &times;
+      </button>
+
+      <!-- {{> /if}} -->
+
+      
+      <!-- {{> #if currentUser}} -->
+        <input type="checkbox" checked = "{{checked}}" class="toggle-checked">   
+     
+        <span class="text">
+
+          {{text}}
+        </span>
+        <!-- {{> /if}} -->
+        
+    </li>
+
+  {{/each}}
+
+</ul>
+  
+</template>
